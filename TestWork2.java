@@ -45,6 +45,7 @@ class TestWork2{
 
         WritableRaster raster = img.getRaster();
 
+
         System.out.print("t = ");
         int T = scan.nextInt(); // threshold
 

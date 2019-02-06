@@ -8,25 +8,7 @@ import java.util.Scanner;
 
 class TestWork2{
 
-    public static void writeImage(BufferedImage img ,String path){
-        String[] destPath = path.split("\\.");
-        int index = destPath[0].lastIndexOf("/");
-        String folder = path.substring(0 ,index);
-        File outTest = new File(folder);
-
-        if (!outTest.exists()) {
-            System.out.println("Error writing image 1");
-            return;
-        }
-
-        try {
-            File outFile = new File(path);
-            ImageIO.write(img, destPath[1] ,outFile);
-        } catch(IOException e) {
-            System.err.println("Error writing image");
-            return ;
-        }
-    }
+    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("s path = ");

@@ -95,36 +95,6 @@ class TestWork2{
         //333 /Users/wanchairoot/Documents/517451 ComVis/Work2/o/img.png
 
 
-        // for(int row = 0; row < height; ++row) {
-        //     for(int col = 0; col < width; ++col) {
-        //         raster.getPixel(col, row, pixelBuffer);
-        //         if(pixelBuffer[0] < T)
-        //             pixelBuffer[0] = 0;
-        //         else
-        //             pixelBuffer[0] = 255;
-        //         raster.setPixel(col, row, pixelBuffer);
-        //     }
-        // }
-        //
-        // System.out.print("d path = ");
-        // String path = scan.nextLine();
-        // path = scan.nextLine();
-        // String[] destPath = path.split("\\.");
-        // int index = destPath[0].lastIndexOf("/");
-        // String folder = path.substring(0 ,index);
-        // File outTest = new File(folder);
-        //
-        // if (!outTest.exists()) {
-        //     System.out.println("Error writing image 1");
-        //     return;
-        // }
-        //
-        // try {
-        //     File outFile = new File(path);
-        //     ImageIO.write(img, destPath[1] ,outFile);
-        // } catch(IOException e) {
-        //     System.err.println("Error writing image");
-        //     return ;
-        // }
+        
     }
 }

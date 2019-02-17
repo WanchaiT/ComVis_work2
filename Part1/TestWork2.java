@@ -24,7 +24,6 @@ class TestWork2{
             System.exit(0);
         }
 
-
         WritableRaster raster = img.getRaster();
 
 

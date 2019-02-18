@@ -1,4 +1,5 @@
 package lab2;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -7,8 +8,7 @@ import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.util.Scanner;
 
-class TestWork2{
-
+class ImageBinarization{
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -27,17 +27,12 @@ class TestWork2{
 
         WritableRaster raster = img.getRaster();
 
-
         System.out.print("T = ");
         int T = scan.nextInt(); // threshold
 
         int height = img.getHeight();
         int width = img.getWidth();
         int[] pixelBuffer = new int[1];
-///222
-
-        //333 /Users/wanchairoot/Documents/517451 ComVis/Work2/o/img.png
-
 
         for(int row = 0; row < height; ++row) {
             for(int col = 0; col < width; ++col) {
@@ -53,6 +48,7 @@ class TestWork2{
         System.out.print("dest path = ");
         String path = scan.nextLine();
         path = scan.nextLine();
+
         String[] destPath = path.split("\\.");
         int index = destPath[0].lastIndexOf("/");
         String folder = path.substring(0 ,index);
@@ -66,6 +62,7 @@ class TestWork2{
         try {
             File outFile = new File(path);
             ImageIO.write(img, destPath[1] ,outFile);
+            System.out.println("writed image");
         } catch(IOException e) {
             System.err.println("Error writing image");
             return ;

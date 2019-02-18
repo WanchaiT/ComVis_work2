@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinarizationWithUtil1",
+            "request": "launch",
+            "mainClass": "BinarizationWithUtil1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestWork2",
+            "request": "launch",
+            "mainClass": "TestWork2"
+        }
+    ]
+}

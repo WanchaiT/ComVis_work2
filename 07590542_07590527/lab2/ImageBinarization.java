@@ -8,7 +8,7 @@ import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.util.Scanner;
 
-class ImageBinarization{
+class TestWork2{
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -48,7 +48,7 @@ class ImageBinarization{
         System.out.print("dest path = ");
         String path = scan.nextLine();
         path = scan.nextLine();
-
+        
         String[] destPath = path.split("\\.");
         int index = destPath[0].lastIndexOf("/");
         String folder = path.substring(0 ,index);
@@ -62,7 +62,6 @@ class ImageBinarization{
         try {
             File outFile = new File(path);
             ImageIO.write(img, destPath[1] ,outFile);
-            System.out.println("writed image");
         } catch(IOException e) {
             System.err.println("Error writing image");
             return ;

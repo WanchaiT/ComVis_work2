@@ -6,9 +6,6 @@ import java.util.Scanner;
 import imageutil.Util;
 import imageutil.Thresholder;
 
-/**
- * BinarizationWithUtil1
- */
 public class BinarizationWithUtil2 {
 
     public static void main(String[] args) {
@@ -22,7 +19,7 @@ public class BinarizationWithUtil2 {
         
         System.out.print("T = ");
         int T = scan.nextInt();  //2;
-      
+
         Thresholder.binarize(I ,T ,0 ,255);  //3
 
         Util.saveToImage(I, img); //4

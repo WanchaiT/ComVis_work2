@@ -3,12 +3,8 @@ package lab2;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 import java.util.Scanner;
-
 import imageutil.Util;
 
-/**
- * BinarizationWithUtil1
- */
 public class BinarizationWithUtil1 {
 
     public static void main(String[] args) {

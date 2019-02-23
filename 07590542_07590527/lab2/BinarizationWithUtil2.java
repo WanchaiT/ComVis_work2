@@ -12,22 +12,22 @@ public class BinarizationWithUtil2 {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("source path = ");
-        String inputPath = scan.nextLine(); 
+        String inputPath = scan.nextLine();
 
         BufferedImage img = Util.loadImage(inputPath);
-        int[][] I = Util.loadToArray(img);  //1
-        
+        int[][] I = Util.loadToArray(img); // 1
+
         System.out.print("T = ");
-        int T = scan.nextInt();  //2;
+        int T = scan.nextInt(); // 2;
 
-        Thresholder.binarize(I ,T ,0 ,255);  //3
+        Thresholder.binarize(I, T, 0, 255); // 3
 
-        Util.saveToImage(I, img); //4
+        Util.saveToImage(I, img); // 4
 
         System.out.print("dest path = ");
         String temp = scan.nextLine();
         String outputPath = scan.nextLine();
-        Util.saveImage(outputPath, img);    //5
+        Util.saveImage(outputPath, img); // 5
     }
 
 }

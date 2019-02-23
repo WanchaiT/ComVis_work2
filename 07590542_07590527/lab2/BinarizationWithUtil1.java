@@ -37,6 +37,6 @@ public class BinarizationWithUtil1 {
         System.out.print("dest path = ");
         String temp = scan.nextLine();
         String outputPath = scan.nextLine();
-        Util.saveImage(outputPath ,img);
+        Util.saveImage(outputPath, img);
     }
 }
